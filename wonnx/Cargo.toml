@@ -22,7 +22,7 @@ exclude = [
 ]
 
 [dependencies]
-wgpu = "0.19.3"
+wgpu = { git = "https://github.com/wasi-gfx/wgpu.git", rev = "7f555855932ea394c08cc2474aaff87cb642ac24", features = ["wasi", "wgsl"], default-features = false }
 bytemuck = { version = "1.9.1", features = ["extern_crate_alloc"] }
 protobuf = { version = "2.27.1", features = ["with-bytes"] }
 log = "0.4.17"
